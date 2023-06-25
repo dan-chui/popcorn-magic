@@ -380,10 +380,6 @@ main {
   font-size: 32px;
 }
 
-.footer h3:hover {
-  transform: scale(1.1);
-}
-
 .footer a {
   text-decoration: none;
   color: #fff;
