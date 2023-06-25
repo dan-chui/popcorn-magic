@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #2d4272;
+  color: #fff;
+}
+
+header {
+  min-height: 20vh;
+  width: 100%;
+  padding: 1rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary-color);
+  color: #fff;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.3)),
+    url(/assets/movieseats.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+header span {
+  margin-right: 90px;
+}
+
+header img {
+  width: 10rem;
+  margin-top: 10px;
+  margin-left: 55px;
+}
+
+header img:hover {
+  scale: 1.1;
+}
+
+/* Side navigation menu */
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 20px 8px 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 28px;
+  color: #a2a0a0;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 45px;
+}
+
+.openbtn {
+  margin-top: 15px;
+  font-size: 36px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Search */
+.search {
+  background-color: transparent;
+  border: 2px solid #7286d3;
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 24px;
+  padding: 0.5rem 0.2rem 0.5rem 0.4rem;
+  margin-top: 5px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.search::placeholder {
+  color: #7378c5;
+}
+
+.search:focus {
+  outline: none;
+  background-color: #7286d3;
+}
+
+/* Movie Seats */
+#movie {
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+.movie-container {
+  margin: 50px 10px 15px 10px;
+}
+
+.movie-container label {
+  padding-left: 3px;
+  font-size: 28px;
+}
+
+.movie-container select {
+  background-color: #fff;
+  border: 0;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 5px 15px 5px 15px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.container {
+  perspective: 1000px;
+  margin-bottom: 50px;
+}
+
+.seat {
+  background-color: white;
+  height: 12px;
+  width: 15px;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.seat.selected {
+  background-color: #6feaf6;
+}
+
+.seat.occupied {
+  background-color: red;
+}
+
+.seat:nth-of-type(2) {
+  margin-right: 18px;
+}
+
+.seat:nth-last-of-type(2) {
+  margin-left: 18px;
+}
+
+.seat:not(.occupied):hover {
+  cursor: pointer;
+  transform: scale(1.3);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
+}
+
+.showcase .seat:not(.occupied):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+.showcase {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: rgb(170, 158, 158);
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.showcase li small {
+  margin-left: 2px;
+}
+
+.rowseats {
+  display: flex;
+}
+
+.screen {
+  background-color: #fff;
+  height: 100px;
+  width: 100%;
+  margin: 30px 0;
+  transform: rotateX(-35deg);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+p.text {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 50px;
+}
+
+p.text span {
+  color: #6feaf6;
+  font-size: 32px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: rgb(170, 165, 165);
+  color: #fff;
+  margin-top: 5px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.submit-btn:hover {
+  background: rgb(229, 104, 65);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #f9ba87;
+  color: #fff;
+}
+
+.footer h3 {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-size: 32px;
+  font: 700;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.end {
+  padding: 1px 15% 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background: #f9ba87;
+}
+
+.top i {
+  padding: 5px;
+  border-radius: 8px;
+  font-size: 30px;
+}
+
+.top i:hover {
+  scale: 1.2;
+  cursor: pointer;
+}
+
+/* Icons */
+.icons .fa {
+  color: rgb(229, 104, 65);
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-left: 13px;
+  margin-right: 13px;
+  cursor: pointer;
+}
+
+@media (min-width: 360px) and (max-width: 765px) {
+  header span {
+    margin-right: 25px;
+  }
+  header img {
+    width: 6rem;
+    margin-left: 25px;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 350px) {
+  header span {
+    margin-right: 5px;
+  }
+  header img {
+    width: 4rem;
+    margin-left: 5px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 765px) {
+  .openbtn {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 275px) and (max-width: 350px) {
+  .openbtn {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    text-align: center;
+    align-items: center;
+  }
+  .sidenav a {
+    font-size: 18px;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 765px) {
+  .movie-container,
+  .movie-container select {
+    display: flex;
+    flex-direction: column;
+    padding-right: 12px;
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
+    width: 98%;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 350px) {
+  .movie-container,
+  .movie-container select {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-left: 12px;
+    font-size: 14px;
+  }
+  .showcase li {
+    font-size: 14px;
+  }
+}

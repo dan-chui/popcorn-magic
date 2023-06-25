@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="/pages/payment.css" />
+    <title>Popcorn Magic</title>
+  </head>
+  <body>
+    <div id="redseats"></div>
+    <header>
+      <a href="/index.html"
+        ><img src="/assets/popcorn magic-logo.png" alt="logo"
+      /></a>
+      <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <form id="form">
+          <input
+            type="text"
+            id="search"
+            class="search"
+            placeholder="Search Movies"
+          />
+        </form>
+        <a href="/index.html">Home</a>
+        <a href="/pages/tickets.html">Buy Tickets</a>
+        <a href="/pages/payment.html">Payment</a>
+        <a href="/pages/contact.html">Contact</a>
+      </div>
+    </header>
+
+    <div class="container">
+      <form action="">
+        <div class="row">
+          <div class="col">
+            <h3 class="title">billing address</h3>
+
+            <div class="inputBox">
+              <span>Full Name :</span>
+              <input type="text" placeholder="John Doe" />
+            </div>
+            <div class="inputBox">
+              <span>Email :</span>
+              <input type="email" placeholder="contact@email.com" />
+            </div>
+            <div class="inputBox">
+              <span>Address :</span>
+              <input type="text" placeholder="Address" />
+            </div>
+            <div class="inputBox">
+              <span>City :</span>
+              <input type="text" placeholder="City" />
+            </div>
+
+            <div class="flex">
+              <div class="inputBox">
+                <span>State :</span>
+                <input type="text" placeholder="State" />
+              </div>
+              <div class="flex">
+                <div class="inputBox">
+                  <span>Area Code :</span>
+                  <input type="text" placeholder="Area Code" />
+                </div>
+              </div>
+            </div>
+            <div class="inputBox">
+              <span>Country :</span>
+              <input type="text" placeholder="Country" />
+            </div>
+          </div>
+
+          <div class="col">
+            <h3 class="title">payment</h3>
+
+            <div class="inputBox">
+              <span>We accept :</span>
+              <img src="/assets/card_img.png" alt="" />
+            </div>
+            <div class="inputBox">
+              <span>Name on Card :</span>
+              <input type="text" placeholder="John Doe" />
+            </div>
+            <div class="inputBox">
+              <span>Credit Card Number :</span>
+              <input
+                id="ccn"
+                type="tel"
+                inputmode="numeric"
+                pattern="[0-9\s]{13,19}"
+                autocomplete="cc-number"
+                maxlength="16"
+                placeholder="xxxx xxxx xxxx xxxx"
+              />
+            </div>
+            <div class="inputBox">
+              <span>Expiry Month (Month/Year) :</span>
+              <input type="month" id="bdaymonth" name="bdaymonth" />
+            </div>
+
+            <div class="flex">
+              <div class="inputBox">
+                <span>CVV (3-4 digits) :</span>
+                <input type="text" min="0" placeholder="1234" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <input type="submit" value="Checkout" class="submit-btn" />
+      </form>
+    </div>
+
+    <!-- Footer -->
+    <section class="footer">
+      <div id="footer">
+        <a href="/pages/contact.html"><h3>Contact</h3></a>
+        <div class="icons">
+          <i class="fa fa-facebook-official fa-2x"></i>
+          <i class="fa fa-twitter-square fa-2x"></i>
+          <i class="fa fa-linkedin-square fa-2x"></i>
+          <i class="fa fa-instagram fa-2x"></i>
+        </div>
+      </div>
+      <section class="end">
+        <div class="top">
+          <a href="#" title="Top"><i class="bx bx-arrow-from-bottom"></i></a>
+        </div>
+      </section>
+    </section>
+
+    <!-- Script -->
+    <script src="/pages/sidenav.js"></script>
+  </body>
+</html>

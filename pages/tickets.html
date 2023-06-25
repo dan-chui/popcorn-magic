@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="/pages/tickets.css" />
+    <title>Popcorn Magic</title>
+  </head>
+  <body>
+    <div id="redseats"></div>
+    <header>
+      <a href="/index.html"
+        ><img src="/assets/popcorn magic-logo.png" alt="logo"
+      /></a>
+      <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <form id="form">
+          <input
+            type="text"
+            id="search"
+            class="search"
+            placeholder="Search Movies"
+          />
+        </form>
+        <a href="/index.html">Home</a>
+        <a href="/pages/tickets.html">Buy Tickets</a>
+        <a href="/pages/payment.html">Payment</a>
+        <a href="/pages/contact.html">Contact</a>
+      </div>
+    </header>
+
+    <div class="movie-container">
+      <label>Choose a movie:</label>
+      <p></p>
+      <select id="movie">
+        <option value="15">Fast X ($15)</option>
+        <option value="15">Spider-Man ($15)</option>
+        <option value="15">Transformers ($15)</option>
+        <option value="15">Super Mario Bros. ($15)</option>
+        <option value="15">Guardians of the Galaxy ($15)</option>
+        <option value="15">John Wick: Chapter 4 ($15)</option>
+      </select>
+    </div>
+
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <medium>Available</medium>
+      </li>
+      <li>
+        <div class="seat selected"></div>
+        <medium>Selected</medium>
+      </li>
+      <li>
+        <div class="seat occupied"></div>
+        <medium>Occupied</medium>
+      </li>
+    </ul>
+
+    <div class="container">
+      <div class="screen"></div>
+
+      <div class="rowseats">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="rowseats">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="rowseats">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="rowseats">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="rowseats">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="rowseats">
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="rowseats">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="rowseats">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+      </div>
+    </div>
+
+    <div>
+      <p class="text">
+        You have selected <span id="count">0</span> seats
+        <span><br /></span> For a price of <span>$</span
+        ><span id="total">0</span>
+      </p>
+
+      <a href="/pages/payment.html"
+        ><input type="submit" value="Purchase" class="submit-btn"
+      /></a>
+    </div>
+    <!-- Footer -->
+    <section class="footer">
+      <div id="footer">
+        <a href="/pages/contact.html"><h3>Contact</h3></a>
+        <div class="icons">
+          <i class="fa fa-facebook-official fa-2x"></i>
+          <i class="fa fa-twitter-square fa-2x"></i>
+          <i class="fa fa-linkedin-square fa-2x"></i>
+          <i class="fa fa-instagram fa-2x"></i>
+        </div>
+      </div>
+      <section class="end">
+        <div class="top">
+          <a href="#" title="Top"><i class="bx bx-arrow-from-bottom"></i></a>
+        </div>
+      </section>
+    </section>
+
+    <!-- Script -->
+    <script src="/pages/tickets.js"></script>
+    <script src="/pages/sidenav.js"></script>
+  </body>
+</html>

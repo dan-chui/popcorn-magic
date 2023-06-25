@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+:root {
+  --primary-color: #384e81;
+  --secondary-color: #576a96;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: "Roboto", sans-serif;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  min-height: 20vh;
+  width: 100%;
+  padding: 1rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary-color);
+  color: #fff;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.3)),
+    url(/assets/movieseats.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+header span {
+  margin-right: 90px;
+}
+
+header img {
+  width: 10rem;
+  margin-top: 10px;
+  margin-left: 55px;
+}
+
+header img:hover {
+  scale: 1.1;
+}
+
+.row {
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 360px) and (max-width: 765px) {
+  header span {
+    margin-right: 25px;
+  }
+  header img {
+    width: 6rem;
+    margin-left: 25px;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 350px) {
+  header span {
+    margin-right: 5px;
+  }
+  header img {
+    width: 4rem;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Side navigation menu */
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 20px 8px 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 28px;
+  color: #a2a0a0;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 45px;
+}
+
+.openbtn {
+  margin-top: 15px;
+  font-size: 36px;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (min-width: 360px) and (max-width: 765px) {
+  .openbtn {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 275px) and (max-width: 350px) {
+  .openbtn {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    text-align: center;
+    align-items: center;
+  }
+  .sidenav a {
+    font-size: 18px;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+/* Search */
+.search {
+  background-color: transparent;
+  border: 2px solid #7286d3;
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 24px;
+  padding: 0.5rem 0.2rem 0.5rem 0.4rem;
+  margin-top: 5px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.search::placeholder {
+  color: #7378c5;
+}
+
+.search:focus {
+  outline: none;
+  background-color: #7286d3;
+}
+
+/* Payment Container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  min-height: 100vh;
+  background: linear-gradient(
+    90deg,
+    var(--primary-color) 60%,
+    var(--secondary-color) 40.1%
+  );
+}
+
+.container form {
+  padding: 20px;
+  width: 700px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container form .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.container form .row .col {
+  flex: 1 1 250px;
+}
+
+.container form .row .col .title {
+  font-size: 24px;
+  color: #333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.container form .row .col .inputBox {
+  margin: 15px 0;
+}
+
+.container form .row .col .inputBox span {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.container form .row .col .inputBox input {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.container form .row .col .inputBox input:focus {
+  border: 1px solid #000;
+}
+
+.container form .row .col .flex {
+  display: flex;
+  gap: 15px;
+}
+
+.container form .row .col .flex .inputBox {
+  margin-top: 5px;
+}
+
+.container form .row .col .inputBox img {
+  height: 34px;
+  filter: drop-shadow(0 0 2px #000);
+}
+
+.container form .submit-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: rgb(170, 165, 165);
+  color: #fff;
+  margin-top: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.container form .submit-btn:hover {
+  background: rgb(229, 104, 65);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #f9ba87;
+  color: #fff;
+}
+
+.footer h3 {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-size: 32px;
+  font: 700;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.end {
+  padding: 1px 15% 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background: #f9ba87;
+}
+
+.top i {
+  padding: 5px;
+  border-radius: 8px;
+  font-size: 30px;
+}
+
+.top i:hover {
+  scale: 1.2;
+  cursor: pointer;
+}
+
+/* Icons */
+.icons .fa {
+  color: rgb(229, 104, 65);
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-left: 13px;
+  margin-right: 13px;
+  cursor: pointer;
+}
