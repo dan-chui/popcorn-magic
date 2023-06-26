@@ -121,8 +121,10 @@ header img:hover {
 
 /* Movie Seats */
 #movie {
+  width: 400px;
   padding-left: 1px;
   padding-right: 1px;
+  text-align: center;
 }
 
 .movie-container {
@@ -130,7 +132,8 @@ header img:hover {
 }
 
 .movie-container label {
-  padding-left: 3px;
+  display: block;
+  text-align: center;
   font-size: 28px;
 }
 
@@ -316,6 +319,25 @@ p.text span {
     width: 6rem;
     margin-left: 25px;
   }
+  .openbtn {
+    font-size: 30px;
+  }
+  .movie-container,
+  .movie-container select {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
+    width: 95%;
+  }
+  #movie {
+    padding-left: 15px;
+    padding-right: 1px;
+    text-align: center;
+    width: 95%;
+    font-size: 22px;
+  }
 }
 
 @media (min-width: 280px) and (max-width: 350px) {
@@ -326,17 +348,27 @@ p.text span {
     width: 4rem;
     margin-left: 5px;
   }
-}
-
-@media (min-width: 360px) and (max-width: 765px) {
-  .openbtn {
-    font-size: 30px;
-  }
-}
-
-@media (min-width: 275px) and (max-width: 350px) {
   .openbtn {
     font-size: 26px;
+  }
+  .movie-container,
+  .movie-container select {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-left: 12px;
+    font-size: 14px;
+  }
+  .showcase li {
+    font-size: 14px;
+  }
+  #movie {
+    padding-left: 5px;
+    padding-right: 1px;
+    text-align: center;
+    width: 98%;
+    font-size: 18px;
   }
 }
 
@@ -349,33 +381,5 @@ p.text span {
     font-size: 18px;
     text-align: center;
     align-items: center;
-  }
-}
-
-@media (min-width: 360px) and (max-width: 765px) {
-  .movie-container,
-  .movie-container select {
-    display: flex;
-    flex-direction: column;
-    padding-right: 12px;
-    text-align: center;
-    align-items: center;
-    font-size: 18px;
-    width: 98%;
-  }
-}
-
-@media (min-width: 280px) and (max-width: 350px) {
-  .movie-container,
-  .movie-container select {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    padding-left: 12px;
-    font-size: 14px;
-  }
-  .showcase li {
-    font-size: 14px;
   }
 }

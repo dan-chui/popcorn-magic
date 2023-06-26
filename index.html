@@ -1,59 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="/assets/favicon.png">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/assets/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Popcorn Magic</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="redseats"></div>
     <header>
-        <a href="index.html"><img src="/assets/popcorn magic-logo.png" alt="logo"></a>
-        <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <form id="form">
-                <input type="text" id="search" class="search" placeholder="Search Movies">
-            </form>
-            <a href="/index.html">Home</a>
-            <a href="/pages/tickets.html">Buy Tickets</a>
-            <a href="/pages/payment.html">Payment</a>
-            <a href="/pages/contact.html">Contact</a>
-        </div>
+      <a href="index.html"
+        ><img src="/assets/popcorn magic-logo.png" alt="logo"
+      /></a>
+      <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <form id="form">
+          <input
+            type="text"
+            id="search"
+            class="search"
+            placeholder="Search Movies"
+          />
+        </form>
+        <a href="/index.html">Home</a>
+        <a href="/pages/tickets.html">Buy Tickets</a>
+        <a href="/pages/payment.html">Payment</a>
+        <a href="/pages/contact.html">Contact</a>
+      </div>
     </header>
 
     <main id="main"></main>
     <div id="pagination" class="pagination">
-        <div class="page disabled" id="prev">Prev</div>
-        <div class="current" id="current">1</div>
-        <div class="page" id="next">Next</div>
+      <div class="page disabled" id="prev">Prev</div>
+      <div class="current" id="current">1</div>
+      <div class="page" id="next">Next</div>
     </div>
 
     <!-- Footer -->
     <section class="footer">
-        <div id="footer">
+      <div id="footer">
         <a href="/pages/contact.html"><h3>Contact</h3></a>
         <div class="icons">
-            <i class="fa fa-facebook-official fa-2x"></i>
-            <i class="fa fa-twitter-square fa-2x"></i>
-            <i class="fa fa-linkedin-square fa-2x"></i>
-            <i class="fa fa-instagram fa-2x"></i>
+          <i class="fa fa-facebook-official fa-2x"></i>
+          <i class="fa fa-twitter-square fa-2x"></i>
+          <i class="fa fa-linkedin-square fa-2x"></i>
+          <i class="fa fa-instagram fa-2x"></i>
         </div>
+      </div>
+      <section class="end">
+        <div class="top">
+          <a href="#" title="Top"><i class="bx bx-arrow-from-bottom"></i></a>
         </div>
-        <section class="end">
-            <div class="top">
-                <a href="#" title="Top"><i class='bx bx-arrow-from-bottom'></i></a>
-            </div>
-        </section>
+      </section>
     </section>
-    
+
     <!-- Script -->
     <script type="text/javascript" src="/config.js"></script>
     <script src="/script.js"></script>
-</body>
+  </body>
 </html>
