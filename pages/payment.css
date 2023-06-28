@@ -273,6 +273,7 @@ header img:hover {
   cursor: pointer;
 }
 
+/* Media queries */
 @media (min-width: 360px) and (max-width: 765px) {
   header span {
     margin-right: 25px;

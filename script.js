@@ -83,6 +83,7 @@ function showMovies(movies) {
   });
 }
 
+// Movie rating
 function getClassByRate(vote) {
   if (vote >= 7.5) {
     return "green";
@@ -93,6 +94,7 @@ function getClassByRate(vote) {
   }
 }
 
+// Submit function
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
@@ -122,6 +124,7 @@ next.addEventListener("click", () => {
   }
 });
 
+// Query function
 function pageCall(page) {
   let urlSplit = lastUrl.split("?");
   let queryPar = urlSplit[1].split("&");
