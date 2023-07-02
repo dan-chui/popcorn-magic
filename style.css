@@ -39,9 +39,9 @@ header span {
 }
 
 header img {
-  width: 10rem;
+  width: 6rem;
   margin-top: 10px;
-  margin-left: 55px;
+  margin-left: 75px;
 }
 
 header img:hover {
@@ -420,8 +420,8 @@ main {
     margin-right: 25px;
   }
   header img {
-    width: 6rem;
-    margin-left: 25px;
+    width: 3rem;
+    margin-left: 15px;
   }
   .openbtn {
     font-size: 30px;
@@ -433,8 +433,8 @@ main {
     margin-right: 5px;
   }
   header img {
-    width: 4rem;
-    margin-left: 5px;
+    width: 2.5rem;
+    margin-left: 10px;
   }
   .openbtn {
     font-size: 26px;
