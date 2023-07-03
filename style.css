@@ -28,7 +28,7 @@ header {
   background-color: var(--secondary-color);
   color: #fff;
   background-image: linear-gradient(rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.3)),
-    url(/assets/movieseats.jpg);
+    url(/assets/movieseats.webp);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -42,6 +42,7 @@ header img {
   width: 6rem;
   margin-top: 10px;
   margin-left: 75px;
+  border-radius: 10px;
 }
 
 header img:hover {
