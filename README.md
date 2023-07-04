@@ -20,6 +20,8 @@ Welcome to **Popcorn Magic** - the best choice for browsing movies!
   
 - **Pagination and Search functions**: Easily browse through and search within the movie library.
 
+- **Local Storage**: Utilize browser local storage to recall your seat selection.
+
 - **API**: Fetch movie data from the TMDb API.
 
 ---
