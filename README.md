@@ -1,7 +1,9 @@
 # Popcorn Magic
 
 ## 💻 Project
-Mobile responsive app that uses the TMDb API to fetch and display movie data. You can browse through movies using pagination, and go to pages for cinema seat selection plus payment services.
+Welcome to **Popcorn Magic** - the best choice for browsing movies!
+
+**Popcorn Magic** is a mobile responsive app that uses the TMDb API to fetch and display movie data. You can browse through movies using pagination, and go to pages for cinema seat selection plus payment services.
 
 ## 🚀 Technologies
 
