@@ -41,8 +41,8 @@ header span {
 header img {
   width: 6rem;
   margin-top: 10px;
-  margin-left: 75px;
-  border-radius: 10px;
+  margin-left: 80px;
+  border-radius: 10%;
 }
 
 header img:hover {
