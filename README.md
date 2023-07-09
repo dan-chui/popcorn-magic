@@ -24,7 +24,7 @@ Please visit (in a new tab): https://popcorn-magic.vercel.app/
 
 - **Local Storage**: Utilize browser local storage to recall your seat selection.
 
-- **API**: Fetch movie data from the TMDb API.
+- **API**: Fetch movie data using the TMDb API.
 
 ---
 
