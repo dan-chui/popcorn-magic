@@ -13,7 +13,7 @@ Please visit (in a new tab): https://popcorn-magic.vercel.app/
 - HTML
 - CSS
 - TMDb API
-- Hosted in Vercel
+- Vercel
 
 ## 💫 Features
 
