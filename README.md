@@ -61,4 +61,6 @@ npm run build
 ```
 ## Demo
 
+Please visit (in a new tab): https://popcorn-magic.vercel.app/
+
 ![](/assets/screenshot.webp)
