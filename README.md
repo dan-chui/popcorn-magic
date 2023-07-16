@@ -19,7 +19,7 @@ Please visit (in a new tab): https://popcorn-magic.vercel.app/
 
 - **UI/UX**: Clean User interface and easy to use.
 
-- **Mobile-Responsive**: Accessible via PC, tablet, or mobile phone systems.
+- **Mobile Responsive**: Accessible via PC, tablet, or mobile phone systems.
   
 - **Pagination and Search functions**: Easily browse through and search within the movie library database.
 
