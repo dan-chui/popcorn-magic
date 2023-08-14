@@ -13,14 +13,15 @@ Please visit (in a new tab): https://popcorn-magic.vercel.app/
 - HTML
 - CSS
 - TMDb API
+- Vercel
 
 ## 💫 Features
 
 - **UI/UX**: Clean User interface and easy to use.
 
-- **Mobile-Responsive**: Accessible via PC, tablet, or mobile phone systems.
+- **Mobile Responsive**: Accessible via PC, tablet, or mobile phone systems.
   
-- **Pagination and Search functions**: Easily browse through and search within the movie library.
+- **Pagination and Search**: Easily browse through and search within the movie library database.
 
 - **Local Storage**: Utilize browser local storage to recall your seat selection.
 
@@ -59,3 +60,8 @@ npm run dev
 ```
 npm run build
 ```
+## Demo
+
+Please visit (in a new tab): https://popcorn-magic.vercel.app/
+
+![](/assets/screenshot.webp)
