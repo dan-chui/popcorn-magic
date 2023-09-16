@@ -1,110 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="/assets/favicon.ico" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="/style.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="/style.css" />
     <title>Popcorn Magic</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="redseats"></div>
     <header>
-        <a href="/index.html"
+      <a href="/index.html"
         ><img src="/assets/Popcorn Magic.svg" alt="logo"
-      /></a>     
-        <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <form id="form">
-                <input type="text" id="search" class="search" placeholder="Search Movies">
-            </form>
-            <a href="/index.html">Home</a>
-            <a href="/pages/tickets.html">Buy Tickets</a>
-            <a href="/pages/payment.html">Payment</a>
-            <a href="/pages/contact.html">Contact</a>
-         </div>
+      /></a>
+      <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <form id="form">
+          <input
+            type="text"
+            id="search"
+            class="search"
+            placeholder="Search Movies"
+          />
+        </form>
+        <a href="/index.html">Home</a>
+        <a href="/pages/tickets.html">Buy Tickets</a>
+        <a href="/pages/payment.html">Payment</a>
+        <a href="/pages/contact.html">Contact</a>
+      </div>
     </header>
 
     <!-- About -->
-    <div id="about">
-        <section class="about-us">
-            <div class="row">
-                <div class="about-col">
-                    <h1>Over 200,000 users and growing!</h1>
-                    <p>Founded by Dan Chui in 2023, Popcorn Magic is a top web application for sourcing your favorite Movies. The Company's mission is to be the #1 platform that connects and benefits the entire Movie ecosystem around the world. Popcorn Magic is expanding at an incredible rate, and serves over 200,000 customers in North and South America, parts of Europe, and select regions around Asia. We connect users to the content they love.</p>                    
-                </div>
-                <div class="about-col">
-                    <img src="/assets/about.webp" alt="about">
-                </div>
-            </div>
-        </section>
-
-    <!-- Location and Contact Form -->
-    <section class="location">
-        <img src="/assets/map.webp" alt="map">
-    </section>
-   
-    <section class="contact-us">
+    <div id="about" class="wrapper">
+      <section class="about-us">
         <div class="row">
-            <div class="contact-col">
-                <div>
-                    <i class="fa fa-home"></i>
-                    <span>
-                        <h5>1-1-8 Nishi-Shinjuku, Shinjuku-Ku</h5>
-                        <p>Tokyo, Japan 160-0023</p>
-                    </span>
-                </div>
-                <div>
-                    <i class="fa fa-phone"></i>
-                    <span>
-                        <h5>+81 03-2222-9999</h5>
-                        <p>Business hours: 9am - 730pm, Monday - Friday</p>
-                    </span>
-                </div>
-                <div>
-                    <i class="fa fa-envelope-o"></i>
-                    <span>
-                        <h5>contact@popcorn-magic.com</h5>
-                        <p>Inquiries</p>
-                    </span>
-                </div>
-            </div>
-            <div class="contact-col">
-                <form action="" onsubmit="sendEmail()">
-                    <input type="text" placeholder="Name" required>
-                    <input type="email" placeholder="Email" required>
-                    <input type="text" placeholder="Subject" required>
-                    <textarea name="" id="" rows="8" placeholder="Message" required></textarea>
-                    <button type="submit" class="hero-btn red-btn">Send Message</button>
-                </form>
-            </div>
+          <div class="about-col">
+            <h1>Over 200,000 users and growing!</h1>
+            <p>
+              Founded by Dan Chui in 2023, Popcorn Magic is a top web
+              application for sourcing your favorite Movies. The Company's
+              mission is to be the #1 platform that connects and benefits the
+              entire Movie ecosystem around the world. Popcorn Magic is
+              expanding at an incredible rate, and serves over 200,000 customers
+              in North and South America, parts of Europe, and select regions
+              around Asia. We connect users to the content they love.
+            </p>
+          </div>
+          <div class="about-col">
+            <img src="/assets/about.webp" alt="about" />
+          </div>
         </div>
-    </section>
+      </section>
+
+      <!-- Location and Contact Form -->
+      <section class="location">
+        <img src="/assets/map.webp" alt="map" />
+      </section>
+
+      <section class="contact-us">
+        <div class="row">
+          <div class="contact-col">
+            <div>
+              <i class="fa fa-home"></i>
+              <span>
+                <h5>1-1-8 Nishi-Shinjuku, Shinjuku-Ku</h5>
+                <p>Tokyo, Japan 160-0023</p>
+              </span>
+            </div>
+            <div>
+              <i class="fa fa-phone"></i>
+              <span>
+                <h5>+81 03-2222-9999</h5>
+                <p>Business hours: 9am - 730pm, Monday - Friday</p>
+              </span>
+            </div>
+            <div>
+              <i class="fa fa-envelope-o"></i>
+              <span>
+                <h5>contact@popcorn-magic.com</h5>
+                <p>Inquiries</p>
+              </span>
+            </div>
+          </div>
+          <div class="contact-col">
+            <form action="" onsubmit="sendEmail()">
+              <input type="text" placeholder="Name" required />
+              <input type="email" placeholder="Email" required />
+              <input type="text" placeholder="Subject" required />
+              <textarea
+                name=""
+                id=""
+                rows="8"
+                placeholder="Message"
+                required
+              ></textarea>
+              <button type="submit" class="hero-btn red-btn">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
 
     <!-- Footer -->
     <section class="footer">
-        <div id="footer">
+      <div id="footer">
         <a href="/pages/contact.html"><h3>Contact</h3></a>
         <div class="icons">
-            <i class="fa fa-facebook-official fa-2x"></i>
-            <i class="fa fa-twitter-square fa-2x"></i>
-            <i class="fa fa-linkedin-square fa-2x"></i>
-            <i class="fa fa-instagram fa-2x"></i>
+          <i class="fa fa-facebook-official fa-2x"></i>
+          <i class="fa fa-twitter-square fa-2x"></i>
+          <i class="fa fa-linkedin-square fa-2x"></i>
+          <i class="fa fa-instagram fa-2x"></i>
         </div>
+      </div>
+      <section class="end">
+        <div class="top">
+          <a href="#" title="Top"><i class="bx bx-arrow-from-bottom"></i></a>
         </div>
-        <section class="end">
-            <div class="top">
-                <a href="#" title="Top"><i class='bx bx-arrow-from-bottom'></i></a>
-            </div>
-        </section>
+      </section>
     </section>
-
 
     <!-- Script -->
     <script src="/pages/sidenav.js"></script>
-</body>
+  </body>
 </html>

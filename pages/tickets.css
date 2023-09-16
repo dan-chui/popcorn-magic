@@ -122,7 +122,7 @@ header img:hover {
 
 /* Movie Seats */
 #movie {
-  width: 400px;
+  width: 500px;
   padding-left: 1px;
   padding-right: 1px;
   text-align: center;
@@ -135,7 +135,7 @@ header img:hover {
 .movie-container label {
   display: block;
   text-align: center;
-  font-size: 28px;
+  font-size: 34px;
 }
 
 .movie-container select {
@@ -152,7 +152,7 @@ header img:hover {
 }
 
 .container {
-  perspective: 1000px;
+  perspective: 1100px;
   margin-bottom: 50px;
 }
 
@@ -215,12 +215,14 @@ header img:hover {
 
 .rowseats {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .screen {
   background-color: #fff;
-  height: 100px;
-  width: 100%;
+  height: 200px;
+  width: 400px;
   margin: 30px 0;
   transform: rotateX(-35deg);
   box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
@@ -274,7 +276,6 @@ p.text span {
   margin-bottom: 10px;
   margin-top: 20px;
   font-size: 32px;
-  font: 700;
 }
 
 .footer a {
@@ -340,48 +341,52 @@ p.text span {
     width: 95%;
     font-size: 22px;
   }
-}
+  .screen {
+    height: 200px;
+    width: 300px;
+  }
 
-@media (min-width: 280px) and (max-width: 350px) {
-  header span {
-    margin-right: 5px;
+  @media (min-width: 280px) and (max-width: 350px) {
+    header span {
+      margin-right: 5px;
+    }
+    header img {
+      width: 2.5rem;
+      margin-left: 10px;
+    }
+    .openbtn {
+      font-size: 26px;
+    }
+    .movie-container,
+    .movie-container select {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      padding-left: 12px;
+      font-size: 14px;
+    }
+    .showcase li {
+      font-size: 14px;
+    }
+    #movie {
+      padding-left: 5px;
+      padding-right: 1px;
+      text-align: center;
+      width: 98%;
+      font-size: 18px;
+    }
   }
-  header img {
-    width: 2.5rem;
-    margin-left: 10px;
-  }
-  .openbtn {
-    font-size: 26px;
-  }
-  .movie-container,
-  .movie-container select {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    padding-left: 12px;
-    font-size: 14px;
-  }
-  .showcase li {
-    font-size: 14px;
-  }
-  #movie {
-    padding-left: 5px;
-    padding-right: 1px;
-    text-align: center;
-    width: 98%;
-    font-size: 18px;
-  }
-}
 
-@media screen and (max-height: 450px) {
-  .sidenav {
-    text-align: center;
-    align-items: center;
-  }
-  .sidenav a {
-    font-size: 18px;
-    text-align: center;
-    align-items: center;
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      text-align: center;
+      align-items: center;
+    }
+    .sidenav a {
+      font-size: 18px;
+      text-align: center;
+      align-items: center;
+    }
   }
 }

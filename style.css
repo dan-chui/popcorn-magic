@@ -243,7 +243,6 @@ main {
   margin-right: auto;
   margin-bottom: 35px;
   padding-top: 10px;
-  padding-bottom: 35px;
 }
 
 .about-col {
@@ -280,14 +279,15 @@ main {
 }
 
 .location img {
-  width: 90%;
+  width: 94%;
   margin: auto;
   display: block;
 }
 
 .contact-us {
-  width: 80%;
-  margin: auto;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contact-col {
@@ -304,7 +304,7 @@ main {
 .contact-col div .fa {
   font-size: 28px;
   color: rgb(229, 104, 65);
-  margin: 50px;
+  margin: 50px 50px 50px 0;
 }
 
 .contact-col div p {
@@ -431,7 +431,7 @@ main {
 
 @media (min-width: 275px) and (max-width: 350px) {
   header span {
-    margin-right: 5px;
+    margin-right: 0;
   }
   header img {
     width: 2.5rem;
@@ -463,5 +463,19 @@ main {
 @media (min-width: 280px) and (max-width: 1200px) {
   .location img {
     width: 100%;
+  }
+}
+
+@media (min-width: 920px) and (max-width: 1400px) {
+  #about .row {
+    display: block;
+  }
+}
+
+@media (min-width: 1600px) {
+  .wrapper {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
   }
 }
