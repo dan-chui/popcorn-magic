@@ -7,6 +7,8 @@ Welcome to **Popcorn Magic** - the best choice for browsing movies!
 
 Please visit (in a new tab): https://popcorn-magic.vercel.app/
 
+**(Note: Please turn off Ad/Cookie blockers to enable data fetching)**
+
 ## 🚀 Technologies
 
 - JavaScript (ES6+)
