@@ -29,6 +29,20 @@ Please visit (in a new tab): https://popcorn-magic.vercel.app/
 
 ---
 
+## Demo
+
+Please visit (in a new tab): https://popcorn-magic.vercel.app/
+
+![](/assets/screenshot1.webp)
+
+![](/assets/screenshot2.webp)
+
+![](/assets/screenshot3.webp)
+
+![](/assets/screenshot4.webp)
+
+---
+
 ## 🌎 Getting Started
 
 ### Installation
@@ -60,8 +74,3 @@ npm run dev
 ```
 npm run build
 ```
-## Demo
-
-Please visit (in a new tab): https://popcorn-magic.vercel.app/
-
-![](/assets/screenshot.webp)
