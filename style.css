@@ -12,7 +12,7 @@
 body {
   background-color: var(--primary-color);
   font-family: "Roboto", sans-serif;
-  min-height: 100%;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
 }
