@@ -100,7 +100,7 @@ header img:hover {
 }
 
 /* Search */
-.search {
+/* .search {
   background-color: transparent;
   border: 2px solid #7286d3;
   border-radius: 50px;
@@ -124,7 +124,7 @@ header img:hover {
 .search:focus {
   outline: none;
   background-color: #7286d3;
-}
+} */
 
 /* Payment Container */
 .container {
