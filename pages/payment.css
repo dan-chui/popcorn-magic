@@ -134,8 +134,8 @@ header img:hover {
   padding: 25px;
   min-height: 100vh;
   background: linear-gradient(
-    90deg,
-    var(--primary-color) 60%,
+    360deg,
+    var(--primary-color) 50%,
     var(--secondary-color) 40.1%
   );
 }
@@ -315,5 +315,38 @@ header img:hover {
     font-size: 18px;
     text-align: center;
     align-items: center;
+  }
+}
+
+@media (min-width: 2400px) {
+  .wrapper,
+  .header-wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 2400px;
+    padding: 0;
+    object-fit: contain;
+  }
+}
+
+@media (min-width: 3000px) {
+  header img {
+    width: 8rem;
+  }
+
+  .sidenav .search {
+    font-size: 3rem;
+  }
+
+  .sidenav a {
+    font-size: 3rem;
+  }
+  .sidenav .closebtn {
+    right: 8rem;
+    font-size: 8rem;
+  }
+
+  .openbtn {
+    font-size: 4rem;
   }
 }
