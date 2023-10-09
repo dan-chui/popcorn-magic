@@ -272,16 +272,16 @@ main {
 
 /* Location & Contact Us */
 .location {
-  width: 80%;
-  height: 80%;
-  margin: 20px auto;
-  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.location img {
-  width: 94%;
-  margin: auto;
-  display: block;
+iframe {
+  width: 80%;
+  margin: 10px auto;
+  padding: 20px 0;
 }
 
 .contact-us {
@@ -457,12 +457,6 @@ main {
     font-size: 18px;
     text-align: center;
     align-items: center;
-  }
-}
-
-@media (min-width: 280px) and (max-width: 1200px) {
-  .location img {
-    width: 100%;
   }
 }
 
