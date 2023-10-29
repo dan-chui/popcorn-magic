@@ -11,7 +11,7 @@ Please visit (in a new tab): https://popcorn-magic.vercel.app/
 
 ## 🚀 Technologies
 
-- JavaScript (ES6+)
+- JavaScript
 - HTML
 - CSS
 - TMDb API
