@@ -3,7 +3,7 @@
 ## 💻 Project
 Welcome to **Popcorn Magic** - the best choice for browsing movies!
 
-**Popcorn Magic** is a mobile responsive app that uses the TMDb API to fetch and display movie data. You can browse through movies using pagination, and go to pages for cinema seat selection plus payment services.
+**Popcorn Magic** is a mobile responsive app that uses the TMDb API to fetch and display movie data. You can browse through popular movies using pagination, and go to pages for cinema seat selection plus payment services.
 
 Please visit (in a new tab): https://popcorn-magic.vercel.app/
 
@@ -11,7 +11,7 @@ Please visit (in a new tab): https://popcorn-magic.vercel.app/
 
 ## 🚀 Technologies
 
-- JavaScript (ES6+)
+- JavaScript
 - HTML
 - CSS
 - TMDb API
