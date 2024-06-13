@@ -23,7 +23,7 @@ Please visit (in a new tab): https://popcorn-magic.vercel.app/
 
 - **Responsive**: Accessible via PC (including extra-wide screens), tablet, and mobile phone.
   
-- **Pagination and Search**: Easily browse through and search within the movie library database.
+- **Pagination and Search**: Easily browse through and search within the movie library database (based upon Popularity).
 
 - **Local Storage**: Utilize browser local storage to recall your seat selection.
 
